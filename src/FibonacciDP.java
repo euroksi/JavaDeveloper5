@@ -14,9 +14,24 @@ public class FibonacciDP {
 
         return fib[n];
     }
+    public static void complexity() {
+        System.out.println("Часова складність: O(n)");
+        System.out.println("Просторова складність: O(n)");
+    }
+    public static void printUML() {
+        System.out.println("+--------------------------------+");
+        System.out.println("|           FibonacciDP          |");
+        System.out.println("+--------------------------------+");
+        System.out.println("| +fibonacci(n: int): int        |");
+        System.out.println("| +complexity(): void            |");
+        System.out.println("| +main(args: String[]): void    |");
+        System.out.println("+--------------------------------+");
+    }
 
     public static void main(String[] args) {
         int n = 6;
         System.out.println("Fibonacci(" + n + ") = " + fibonacci(n));
+        complexity();
+        printUML();
     }
 }
